@@ -323,6 +323,7 @@ import UIKit
 			}
 			let tappedValue = valueForPosition(tapLocation)
 			setValue(tappedValue, animated: true)
+			sendActions(for: .touchUpInside)
 			sendActions(for: .valueChanged)
 		}
 	}
